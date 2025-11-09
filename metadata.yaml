@@ -15,5 +15,5 @@ help: |
   /开启抽奖 - 开启抽奖功能
   /关闭抽奖 - 关闭抽奖功能
 version: v1.0.0
-author: Claude
-repo: https://github.com/
+author: miao
+repo: https://github.com/libin99527/astrbot_plugin_newapi_checkin
