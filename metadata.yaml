@@ -1,0 +1,19 @@
+name: astrbot_plugin_newapi_checkin
+display_name: New-API 签到抽奖插件
+desc: 绑定 New-API 账号，支持每日签到和抽奖获取额度
+help: |
+  指令列表：
+  /绑定 <账号> <密码> - 绑定 New-API 账号
+  /签到 - 每日签到获取额度
+  /抽奖 - 参与抽奖
+  /我的绑定 - 查看绑定状态
+  /查看余额 - 查询账号余额
+  /抽奖状态 - 查看抽奖信息
+  /New-API - 显示功能菜单
+
+  管理员命令：
+  /开启抽奖 - 开启抽奖功能
+  /关闭抽奖 - 关闭抽奖功能
+version: v1.0.0
+author: Claude
+repo: https://github.com/

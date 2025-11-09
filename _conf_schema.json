@@ -1,0 +1,54 @@
+{
+    "database_host": {
+        "description": "New-API PostgreSQL 数据库主机",
+        "type": "string",
+        "default": "localhost"
+    },
+    "database_port": {
+        "description": "数据库端口",
+        "type": "int",
+        "default": 5432
+    },
+    "database_user": {
+        "description": "数据库用户名",
+        "type": "string",
+        "default": "postgres"
+    },
+    "database_password": {
+        "description": "数据库密码",
+        "type": "string",
+        "default": ""
+    },
+    "database_name": {
+        "description": "数据库名称",
+        "type": "string",
+        "default": "new-api"
+    },
+    "checkin_quota": {
+        "description": "每日签到获得的额度（单位：1=$500000）",
+        "hint": "例如 500000 = $1，100000 = $0.2",
+        "type": "int",
+        "default": 500000
+    },
+    "enable_daily_limit": {
+        "description": "是否启用每日签到限制（一天只能签到一次）",
+        "type": "bool",
+        "default": true
+    },
+    "lottery_enabled": {
+        "description": "是否开启抽奖功能（需管理员手动开启）",
+        "type": "bool",
+        "default": false
+    },
+    "lottery_daily_limit": {
+        "description": "每日抽奖次数限制",
+        "type": "int",
+        "default": 1
+    },
+    "lottery_prizes": {
+        "description": "抽奖奖项配置（JSON格式）",
+        "hint": "格式：[{\"quota\":1000000,\"weight\":5,\"name\":\"超级大奖\"},{\"quota\":500000,\"weight\":15,\"name\":\"大奖\"},{\"quota\":100000,\"weight\":50,\"name\":\"普通奖\"},{\"quota\":0,\"weight\":30,\"name\":\"谢谢参与\"}]",
+        "type": "string",
+        "default": "[{\"quota\":1000000,\"weight\":5,\"name\":\"超级大奖\"},{\"quota\":500000,\"weight\":15,\"name\":\"大奖\"},{\"quota\":100000,\"weight\":50,\"name\":\"普通奖\"},{\"quota\":0,\"weight\":30,\"name\":\"谢谢参与\"}]"
+    }
+}
